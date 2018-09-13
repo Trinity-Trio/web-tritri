@@ -1,6 +1,6 @@
 <template lang='pug'>
 #topView
-  <img src="~/static/motionlogo.gif" alt="">
+  img(src='~/static/motionlogo.gif')
 </template>
 <script>
 export default {
