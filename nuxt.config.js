@@ -63,7 +63,7 @@ module.exports = {
       urlLoader.test = /\.(png|jpe?g|gif|svg)$/
       config.module.rules.push({
         enforce: 'pre',
-        test: /\.(png|jpe?g|gif|svg)$/,
+        test: /\.(png|jpe?g|gif|svg)$/i,
         loader: 'url-loader',
         query: {
           limit: 1000000, // 1MB
