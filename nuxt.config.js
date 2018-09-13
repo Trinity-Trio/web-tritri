@@ -68,6 +68,16 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+      const urlLoader = config.module.rules.find((rule) => rule.loader === 'url-loader')
+      urlLoader.test = /\.(png|jpe?g|gif|svg)$/
+      config.module.rules.push({
+        test: /\.(png|jpe?g|gif|svg)$/,
+        loader: 'url-loader',
+        query: {
+          limit: 1000000, // 1MB
+          name: 'img/[name].[hash:7].[ext]'
+        }
+      })
     }
   },
   generate: { dir: 'docs' },
