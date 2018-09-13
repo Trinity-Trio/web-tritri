@@ -21,4 +21,8 @@ export default {
     .song
       width: 33.3vw
       height: 33.3vw
+    @media screen and (max-width:1024px)
+      .song
+        width: 50vw
+        height: 50vw
 </style>
