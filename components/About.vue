@@ -11,7 +11,7 @@ export default {
 <style lang='sass' scoped>
   #about
     // height: 75vh
-    background-color: #00615B
+    background-color: #03635B
     font-size: 2.8em
     color: #fff
     text-align: center
