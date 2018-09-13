@@ -59,6 +59,17 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      // const urlLoader = config.module.rules.find((rule) => rule.loader === 'url-loader')
+      // urlLoader.test = /\.(png|jpe?g|gif|svg)$/
+      // config.module.rules.push({
+      //   enforce: 'pre',
+      //   test: /\.(png|jpe?g|gif|svg)$/i,
+      //   loader: 'url-loader',
+      //   query: {
+      //     limit: 1000000, // 1MB
+      //     name: './[name].[hash:7].[ext]'
+      //   }
+      // })
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
@@ -68,18 +79,7 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-      const urlLoader = config.module.rules.find((rule) => rule.loader === 'url-loader')
-      urlLoader.test = /\.(png|jpe?g|gif|svg)$/
-      config.module.rules.push({
-        test: /\.(png|jpe?g|gif|svg)$/,
-        loader: 'url-loader',
-        query: {
-          limit: 1000000, // 1MB
-          name: 'img/[name].[hash:7].[ext]'
-        }
-      })
     }
   },
-  generate: { dir: 'docs' },
-  router: { base: './' }
+  generate: { dir: 'docs' }
 }
