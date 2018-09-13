@@ -15,4 +15,10 @@ export default {
 </script>
 
 <style lang='sass' scoped>
+  #works
+    display: flex
+    flex-wrap: wrap
+    .song
+      width: 33.3vw
+      height: 33.3vw
 </style>
