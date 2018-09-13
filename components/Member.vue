@@ -1,5 +1,8 @@
 <template lang='pug'>
 #member
+  #CHARLII_k
+  #ryu-g
+  #by_sK
 </template>
 
 <script>
