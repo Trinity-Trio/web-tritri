@@ -1,6 +1,6 @@
 <template lang='pug'>
 #topView
-  img(src='~/static/motionlogo.gif')
+  img.logo(src='~/static/motionlogo.gif')
 </template>
 <script>
 export default {
@@ -14,4 +14,7 @@ export default {
   justify-content: center
   height: 100vh
   background-color: #03635B
+  img
+    max-width: 80%
+
 </style>
