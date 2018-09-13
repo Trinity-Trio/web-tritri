@@ -46,8 +46,8 @@ export default {
       display: flex
       justify-content: center
       align-items: center
-      width: 33.3vw
-      height: 33.3vw
+      width: calc(100vw / 3)
+      height: calc(100vw / 3)
       @media screen and (max-width:768px)
         width: 50vw
         height: 50vw
