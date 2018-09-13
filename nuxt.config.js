@@ -70,6 +70,6 @@ module.exports = {
       }
     }
   },
-  // router: { base: '/web' },
+  router: { base: '/web' },
   generate: { dir: 'docs' }
 }
