@@ -22,7 +22,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#FFFFFF' },
+  loading: { color: '#000' },
 
   /*
   ** Global CSS
@@ -70,5 +70,6 @@ module.exports = {
       }
     }
   },
-  generate: { dir: 'docs' }
+  generate: { dir: 'docs' },
+  router: { base: './' }
 }
