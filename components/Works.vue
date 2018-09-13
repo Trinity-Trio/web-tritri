@@ -2,26 +2,25 @@
 #works
   .box
     iframe.song(scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/494605326&color=%2300615b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
-    img.loading-a( src="~/static/wait.svg" alt="loading" width=200)
-    img.loading-b( src="~/static/wait.svg" alt="loading" width=200)
+    img.loading( src="~/assets/wait.svg" alt="loading" width=200)
   .box
     iframe.song(scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/493911225&color=%2300615b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
-    img.loading-a( src="~/static/wait.svg" alt="loading" width=200)
+    img.loading( src="~/assets/wait.svg" alt="loading" width=200)
   .box
     iframe.song(scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/493910787&color=%2300615b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
-    img.loading-a( src="~/static/wait.svg" alt="loading" width=200)
+    img.loading( src="~/assets/wait.svg" alt="loading" width=200)
   .box
     iframe.song(scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/493910124&color=%2300615b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
-    img.loading-a( src="~/static/wait.svg" alt="loading" width=200)
+    img.loading( src="~/assets/wait.svg" alt="loading" width=200)
   .box
     iframe.song(scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/493909863&color=%2300615b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
-    img.loading-a( src="~/static/wait.svg" alt="loading" width=200)
+    img.loading( src="~/assets/wait.svg" alt="loading" width=200)
   .box
     iframe.song(scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/493909692&color=%2300615b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
-    img.loading-a( src="~/static/wait.svg" alt="loading" width=200)
+    img.loading( src="~/assets/wait.svg" alt="loading" width=200)
   .box
     iframe.song(scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/493909566&color=%2300615b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
-    img.loading-a( src="~/static/wait.svg" alt="loading" width=200)
+    img.loading( src="~/assets/wait.svg" alt="loading" width=200)
 </template>
 
 <script>
@@ -56,7 +55,7 @@ export default {
       @media screen and (max-width:411px)
         width: 100%
         height: 100vw
-      .loading-a
+      .loading
         position: absolute
         z-index: 0
         width: 150px
@@ -67,15 +66,4 @@ export default {
             transform: rotate(0deg)
           100%
             transform: rotate(358deg)
-      .loading-b
-        position: absolute
-        z-index: 0
-        width: 150px
-        height: 150px
-        animation: rotation 1s infinite ease-in-out
-        @keyframes rotation
-          0%
-            transform: rotate(0deg)
-          100%
-            transform: rotate(360deg)
 </style>
