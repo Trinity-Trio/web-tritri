@@ -20,7 +20,10 @@ export default {
 #member
   height: 100vh
   display: grid
-  grid-template-columns: 1fr 1fr 1fr
+  grid-template-columns: .92fr 1fr .94fr
+  @media screen and ( max-width : 768px )
+    grid-template-columns: none
+    grid-template-rows: .92fr 1fr .90fr
 
 #CHARLII_k
   background-color: #FFCC00
@@ -34,7 +37,7 @@ export default {
 
 .item
   position: relative
-  text-align: center
+  // text-align: center
   overflow: hidden
   img
     position: absolute
@@ -44,7 +47,13 @@ export default {
     right: 50%
     transform: translateX(-50%)
     z-index: 1
-    transition: .2s
+    // transition: .2s
+    @media screen and ( max-width : 768px )
+      transition: none
+      top: -70vh
+      bottom: auto
+      height: 220vh
+      left: 25%
   p
     position: absolute
     left: 2rem
@@ -52,7 +61,14 @@ export default {
     z-index: 2
     font-size: 1.5rem
     font-weight: bold
-  &:hover
-    img
-      bottom: 0rem
+    background-color: #000
+    padding: 0 .2em .2em
+    height: 1em
+    @media screen and ( max-width : 768px )
+      left: 1rem
+      top: 1rem
+      font-size: 1.2rem
+  // &:hover
+  //   img
+  //     bottom: 0rem
 </style>
