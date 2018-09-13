@@ -1,6 +1,6 @@
 # web-tritri
 
-> Trinity Trio&#39;s Web site...
+> Trinity Trio&#39;s Web site
 
 ## Build Setup
 
