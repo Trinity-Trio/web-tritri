@@ -2,6 +2,7 @@
 #works
   .box
     iframe.song( width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/493909566&color=%2300aabb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
+    img.loading( src="~/static/wait.svg" alt="loading" width=200)
   .box
     iframe.song( width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/493909692&color=%2300aabb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
   .box
@@ -14,6 +15,7 @@
     iframe.song( width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/493911225&color=%2300aabb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
   .box
     iframe.song( width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/494605326&color=%2300aabb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
+  img.loading( src="~/static/loading-green.svg" alt="loading" width=200)
 </template>
 
 <script>
@@ -43,4 +45,19 @@ export default {
       @media screen and (max-width:411px)
         width: 100%
         height: 100vw
+
+    .loading
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+
+      width: 150px
+      height: 150px
+      animation: rotation 1s infinite ease-in-out
+      @keyframes rotation
+        0%
+          transform: rotate(0deg)
+        100%
+          transform: rotate(358deg)
 </style>
