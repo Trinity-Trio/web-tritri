@@ -1,6 +1,6 @@
 # web-tritri
 
-> Trinity Trio&#39;s Web site
+https://trinity-trio.github.io/web/
 
 ## Build Setup
 
