@@ -11,5 +11,5 @@ export default {
 <style lang='sass' scoped>
   #about
     p
-      font-size: 34px
+      font-size: 34
 </style>
