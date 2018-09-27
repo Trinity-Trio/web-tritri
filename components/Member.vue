@@ -1,18 +1,33 @@
 <template lang='pug'>
 #member
-  #CHARLII_k.item
+  #CHARLII_k.item(@click='charlii')
     img(src='~/assets/memberCHARLII_k.svg')
     p CHARLII_k
-  #ryu-g.item
+  #ryu-g.item(@click='ryu')
     img(src='~/assets/memberryu-g.svg')
     p ryu-g
-  #by_sK.item
+  #by_sK.item(@click='sk')
     img(src='~/assets/memberby_sK.svg')
     p by_sK
 </template>
 
 <script>
 export default {
+  data: () => {
+    return {
+    }
+  },
+  methods: {
+    charlii: () => {
+      console.log('cha')
+    },
+    ryu: () => {
+      console.log('ryu')
+    },
+    sk: () => {
+      console.log('sk')
+    }
+  }
 }
 </script>
 
