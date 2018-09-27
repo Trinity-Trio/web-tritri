@@ -32,23 +32,41 @@ export default {
 </script>
 
 <style lang='sass' scoped>
+// pc
+$cha-w: .92
+$ryu-w: 1
+$sk-w: .94
+
+// sp
+$cha-h: .92
+$ryu-h: 1
+$sk-h: 90
+
 #member
   height: 100vh
-  display: grid
-  grid-template-columns: .92fr 1fr .94fr
+  display: flex
+  flex-direction: row
   @media screen and ( max-width : 768px )
-    grid-template-columns: none
-    grid-template-rows: .92fr 1fr .90fr
+    flex-direction: column
 
 #CHARLII_k
   background-color: #FFCC00
   color: #FFCC00
+  flex-grow: $cha-w
+  @media screen and ( max-width : 768px )
+    flex-grow: $cha-h
 #ryu-g
   background-color: #E95513
   color: #E95513
+  flex-grow: $ryu-w
+  @media screen and ( max-width : 768px )
+    flex-grow: $ryu-h
 #by_sK
   background-color: lighten(#4e1a68, 25%)
   color: lighten(#4e1a68, 25%)
+  flex-grow: $sk-w
+  @media screen and ( max-width : 768px )
+    flex-grow: $sk-h
 
 .item
   position: relative
