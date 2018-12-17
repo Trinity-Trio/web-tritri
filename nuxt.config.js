@@ -69,6 +69,6 @@ module.exports = {
       }
     }
   },
-  router: { base: '/docs' },
+  router: { base: '/web' },
   generate: { dir: 'docs' }
 }
