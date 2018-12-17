@@ -2,13 +2,16 @@
 #member
   #CHARLII_k.item(@click='charlii', :class='{active: isCha}')
     img(src='~/assets/memberCHARLII_k.svg')
-    p CHARLII_k
+    h3 CHARLII_k
+    p やばいやつです。
   #ryu-g.item(@click='ryu', :class='{active: isRyu}')
     img(src='~/assets/memberryu-g.svg')
-    p ryu-g
+    h3 ryu-g
+    p やばいやつです。
   #by_sK.item(@click='sk', :class='{active: isK}')
     img(src='~/assets/memberby_sK.svg')
-    p by_sK
+    h3 by_sK
+    p やばいやつです。
 </template>
 
 <script>
@@ -65,9 +68,13 @@ $size: 5
   background-color: #FFCC00
   color: #FFCC00
   flex-grow: $cha-w
+  p
+    background-color: #FFCC00
+    color: #000
   @media screen and ( max-width : 768px )
     flex-grow: $cha-h
   &.active
+    @extend .active
     flex-grow: $cha-w * $size
     @media screen and ( max-width : 768px )
       flex-grow: $cha-h * $size
@@ -77,9 +84,13 @@ $size: 5
   background-color: #E95513
   color: #E95513
   flex-grow: $ryu-w
+  p
+    background-color: #E95513
+    color: #000
   @media screen and ( max-width : 768px )
     flex-grow: $ryu-h
   &.active
+    @extend .active
     flex-grow: $ryu-w * $size
     @media screen and ( max-width : 768px )
       flex-grow: $ryu-h * $size
@@ -89,14 +100,28 @@ $size: 5
   background-color: lighten(#4e1a68, 25%)
   color: lighten(#4e1a68, 25%)
   flex-grow: $sk-w
+  p
+    background-color: lighten(#4e1a68, 25%)
+    color: #000
   @media screen and ( max-width : 768px )
     flex-grow: $sk-h
   &.active
+    @extend .active
     flex-grow: $sk-w * $size
     @media screen and ( max-width : 768px )
       flex-grow: $sk-h * $size
     &:hover
       img
+
+.active
+  img
+    left: 0
+  p
+    display: block
+    position: absolute
+    top: 50%
+    left: 50%
+    z-index: 100
 
 .item
   position: relative
@@ -118,7 +143,7 @@ $size: 5
       bottom: auto
       height: 220vh
       left: 25%
-  p
+  h3
     position: absolute
     left: 2rem
     bottom: 2rem
@@ -132,6 +157,8 @@ $size: 5
       left: 1rem
       top: 1rem
       font-size: 1.2rem
+  p
+    display: none
   &:hover
     img
       bottom: 0rem
