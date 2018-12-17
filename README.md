@@ -9,10 +9,11 @@ https://trinity-trio.github.io/web/
 $ yarn install
 
 # serve with hot reload at localhost:3000
-$ yarn run dev
+$ yarn dev
 
-# generate static project
-$ yarn run generate
+# how to deploy
+$ yarn deploy
+# or npm run deploy
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
