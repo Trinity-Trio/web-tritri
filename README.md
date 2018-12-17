@@ -10,6 +10,7 @@ $ yarn install
 
 # serve with hot reload at localhost:3000
 $ yarn dev
+# 開くURLは http://localhost:3000/web/
 
 # how to deploy
 $ yarn deploy
