@@ -39,15 +39,16 @@ export default {
     background-color: #03635B
     color: #fff
     text-align: center
-    font-family: serif
+    font-display: swap
+    font-family: "Sawarabi Mincho", serif
     font-weight: bold
     padding: 7rem 0 7rem
     h2
       font-size: 5em
       margin: auto
       display: block
-      padding: 1rem
-      border: 1px solid #fff
+      padding: 1.45rem 1rem 1rem 1.4rem
+      border: 2px solid #fff
       width: 3em
     section
       display: flex
