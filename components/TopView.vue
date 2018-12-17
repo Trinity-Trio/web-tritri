@@ -33,4 +33,13 @@ export default {
     left: 0
     right: 0
     margin: auto
+    animation: rotation 1s infinite ease
+    animation-delay: 2s
+    @keyframes rotation
+      0%
+        bottom: 5vh
+      20%
+        bottom: 4vh
+      100%
+        bottom: 5vh
 </style>
