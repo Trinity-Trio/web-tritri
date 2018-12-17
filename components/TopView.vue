@@ -21,13 +21,8 @@ export default {
   img.guide
     width: 80px
     height: 80px
+    transform: rotate(180deg)
     animation: rotation 1.55s infinite ease
     animation-delay: 2s
-    @keyframes rotation
-      0%
-        transform: rotate(-60deg)
-      50%
-        transform: rotate(180deg)
-      100%
-        transform: rotate(180deg)
+    margin-top: 10em
 </style>
