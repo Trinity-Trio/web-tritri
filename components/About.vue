@@ -58,7 +58,7 @@ export default {
       @media screen and ( max-width : 1280px )
         font-size: .8rem
       h3
-        font-family: sans-serif
+        font-family: 'Poppins', sans-serif
         writing-mode: vertical-rl
         font-size: 4.5em
         display: flex

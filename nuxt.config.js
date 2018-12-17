@@ -15,7 +15,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/web/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Sawarabi+Mincho' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Sawarabi+Mincho' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:100' }
     ]
   },
 
