@@ -10,19 +10,27 @@ export default {
 
 <style lang='sass' scoped>
 #topView
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
-  height: 100vh
+  position: relative
   background-color: #03635B
+  height: 100vh
+  // min-height: 750px
   img.logo
     max-width: 80%
+    max-height: 100%
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
   img.guide
     width: 80px
     height: 80px
+    max-height: 15vh
     transform: rotate(180deg)
-    animation: rotation 1.55s infinite ease
-    animation-delay: 2s
-    margin-top: 10em
+    position: absolute
+    bottom: 5vh
+    left: 0
+    right: 0
+    margin: auto
 </style>
