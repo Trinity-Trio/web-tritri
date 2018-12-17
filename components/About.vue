@@ -41,7 +41,7 @@ export default {
     text-align: center
     font-family: serif
     font-weight: bold
-    padding: 7rem 4rem 7rem
+    padding: 7rem 0 7rem
     h2
       font-size: 5em
       margin: auto
@@ -51,7 +51,7 @@ export default {
       width: 3em
     section
       display: flex
-      margin-top: 3rem
+      margin: 3rem 4rem 0
       font-size: 1vw
       justify-content: center
       @media screen and ( max-width : 1280px )
