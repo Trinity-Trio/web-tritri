@@ -11,7 +11,7 @@
     "generate": "rm -rf docs; rm -rf _nuxt; nuxt generate; cp -pR ./docs/_nuxt ./; cp -pR ./docs/200.html ./; cp -pR ./docs/favicon.ico ./; cp -pR ./docs/index.html ./; git status",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "deploy": "git add .; git commit -m deploy; git push"
+    "deploy": "npm run generate; git add .; git commit -m deploy; git push"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
