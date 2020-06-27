@@ -14,7 +14,9 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/web/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/web/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Sawarabi+Mincho' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:100' }
     ]
   },
 
@@ -69,6 +71,6 @@ module.exports = {
       }
     }
   },
-  // router: { base: '/web' },
+  router: { base: '/web' },
   generate: { dir: 'docs' }
 }

@@ -47,13 +47,17 @@ export default {
       display: flex
       justify-content: center
       align-items: center
-      width: calc(100vw / 3)
+      flex: 1
+      min-width: 30vw
+      max-width: calc(100vw / 3)
       height: calc(100vw / 3)
       @media screen and (max-width:768px)
-        width: 50vw
-        height: 50vw
+        min-width: 45vw
+        max-width: calc(100vw / 2)
+        height: calc(100vw / 2)
       @media screen and (max-width:411px)
-        width: 100%
+        min-width: 90vw
+        max-width: 100vw
         height: 100vw
       .loading
         position: absolute
