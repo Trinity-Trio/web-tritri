@@ -4,6 +4,14 @@ https://trinity-trio.github.io/web/
 
 ## Build Setup
 
+yarnが導入されていない場合は入れておく
+
+```bash
+npm i -g yarn
+```
+
+基本的操作は以下の通り
+
 ``` bash
 # install dependencies
 $ yarn install
