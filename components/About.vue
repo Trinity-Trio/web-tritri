@@ -1,6 +1,8 @@
 <template lang='pug'>
 #about
-  h2 私達は<br>函館に<br>います
+  h2 私達は<br>函館に<br>いま
+    span.up せ
+    span ん
   section
     h3
       span T
@@ -23,7 +25,7 @@
       p はテキストを扱う。
       p は空間を扱う。
       p は情報空間を扱う。
-      p は函館の自分たちではどうにもならない憂鬱な雰囲気に対抗すべく、小さく抗う希望の灯火である。
+      p は函館の自分たちではどうにもならない憂鬱な雰囲気に対抗すべく、小さく抗う希望の灯火であった。
       p は時間に制約されない。
       p は空間に制約されない。
 </template>
@@ -50,6 +52,10 @@ export default {
       padding: 1.45rem 1rem 1rem 1.4rem
       border: 2px solid #fff
       width: 3em
+      span
+        font-size: 0.5em
+        &.up
+          vertical-align: top
     section
       display: flex
       margin: 3rem 4rem 0
