@@ -6,14 +6,15 @@ https://trinity-trio.github.io/web/
 
 ``` bash
 # install dependencies
-$ npm install
+$ yarn install
 
 # serve with hot reload at localhost:3000
-$ npm run  dev
+$ yarn dev
 # 開くURLは http://localhost:3000/web/
 
 # how to deploy
-$ npm run deploy
+$ yarn deploy
+# or npm run deploy
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
